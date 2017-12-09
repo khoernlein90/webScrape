@@ -29,96 +29,42 @@
             </ul>
         </div>
     </nav>
-    <!-- <div class="jumbotron-fluid align-content-center"> -->
-        <div class="mainTitle">
-            <h1 class="display-3">Mongo Scraper</h1>
-            <p class="lead">Reddit Edition</p>
-        </div>
-        <img src="https://www.wallpaperup.com/uploads/wallpapers/2014/01/02/212662/cd6014a181b547a84f64bcbe3e1d0511.jpg" class="img-fluid" width="100%" alt="Responsive image">
-    <!-- </div> -->
+    <div class="mainTitle">
+        <h1 class="display-3">Mongo Scraper</h1>
+        <p class="lead">Reddit Edition</p>
+    </div>
+    <img src="https://www.wallpaperup.com/uploads/wallpapers/2014/01/02/212662/cd6014a181b547a84f64bcbe3e1d0511.jpg" class="img-fluid" width="100%" alt="Responsive image">
     <div class="container">
-    <div id="wrapper">
-        <div id="articles"></div>
-        <div id="notes"></div>
+        <div id="wrapper">
+            <div id="articles"></div>
+            <div id="notes"></div>
+        </div>
     </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="titleinput">Title</label>
+                        <input type="text" name="title" class="form-control" id="titleinput">
+                    </div>
+                    <div class="form-group">
+                        <label for="bodyinput">Add Note</label>
+                        <textarea class="form-control" id="bodyinput" name="body" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
-
-<!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button> -->
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="form-group">
-    <label for="titleinput">Title</label>
-    <input type="text" name="title" class="form-control" id="titleinput">
-</div><div class="form-group">
-    <label for="bodyinput">Add Note</label>
-    <textarea class="form-control" id="bodyinput" name="body" rows="3"></textarea>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--           <div class="form-group">
-    <label for="exampleFormControlTextarea1">Add Note</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div> -->
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-      </div>
-    </div>
-  </div>
-</div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>

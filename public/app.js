@@ -10,7 +10,7 @@ $("#scrapeButton").on("click", function() {
                 // Display the apropos information on the page
                 $("#articles").append("<div class='card'>" + '<div class="card-header bg-primary text-white">' +
                     "<div class='row'><div class='col-md-10'><h5>" + data[i].title + "</div></h5>" + '<div class="col-md-2 text-right"><button type="button" data-id=' + data[i]._id + ' id="saveArticle" class="btn btn-success">ADD NOTE</button></div>' + "</div></div>" +
-                    '<div class="card-body">' + '<p class="card-text">' + data[i].link + "</p></div>" + "</div>");
+                    '<div class="card-body">' + '<a class="card-text" href=' + data[i].link + ' target="_blank">' + data[i].link + "</a></div>" + "</div>");
             }
         });
     })
