@@ -1,0 +1,127 @@
+header {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    /* background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Reddit_logo_and_wordmark.svg/1200px-Reddit_logo_and_wordmark.svg.png");
+    background-position: center;
+    background-size: 100vh; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.250)), url(../images/bg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+header li {
+    display: inline-block;
+    list-style: none;
+}
+
+header ul {
+    display: inline;
+}
+
+header button {
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 14px;
+    color: white;
+    background: rgb(255, 115, 0);
+    border: 1px solid #eee;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+#scrapeButton {
+    position: absolute;
+    right: 30px;
+}
+
+header button:hover {
+    background: rgb(255, 155, 73);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.card {
+    margin: 10px auto;
+    width: 70%;
+    word-wrap: break-word;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr) 40px;
+    border: 1px solid #eee;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card-text {
+    grid-row: 3 /4;
+    grid-column: 2 / -1;
+    align-self: start;
+    font-size: 20px;
+    /* overflow: hidden; */
+}
+
+.likes {
+    padding: 4px;
+}
+
+.likes p {
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.likes {
+    margin-top: 14px;
+}
+
+.title {
+    background: rgb(255, 115, 0);
+    grid-column: 1/-1;
+    color: #FFF;
+    padding: 14px;
+    font-size: 20px;
+    -webkit-box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+}
+
+.card img {
+    grid-row: 3 / 4;
+    height: 70px;
+    width: 70px;
+}
+.card button {
+    height: 30px;
+    width: 128px;
+}
+.save-button {
+    grid-row: 4 /5;
+    grid-column: 4 / 5;
+    align-self: end;
+    justify-self: end;
+}
+
+.delete-button {
+    justify-self: start;
+    grid-row: 4 / -1;
+    align-self: end;
+}
+
+.note-button {
+    justify-self: end;
+    align-self: end;
+    grid-row: 4 /-1;
+    grid-column: 4 /-1;
+}
