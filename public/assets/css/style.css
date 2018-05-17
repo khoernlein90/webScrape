@@ -1,9 +1,4 @@
 header {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
-    /* background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Reddit_logo_and_wordmark.svg/1200px-Reddit_logo_and_wordmark.svg.png");
-    background-position: center;
-    background-size: 100vh; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.250)), url(../images/bg.png);
     background-attachment: fixed;
     background-size: cover;
@@ -66,7 +61,6 @@ header button:hover {
     grid-column: 2 / -1;
     align-self: start;
     font-size: 20px;
-    /* overflow: hidden; */
 }
 
 .likes {
