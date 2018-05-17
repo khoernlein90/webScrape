@@ -6,15 +6,6 @@ header {
     height: 90vh;
 }
 
-header li {
-    display: inline-block;
-    list-style: none;
-}
-
-header ul {
-    display: inline;
-}
-
 header button {
     text-transform: uppercase;
     padding: 15px;
@@ -28,10 +19,14 @@ header a {
     color: white;
     text-decoration: none;
 }
-
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
 #scrapeButton {
     position: absolute;
     right: 30px;
+    background: red;
 }
 
 header button:hover {
