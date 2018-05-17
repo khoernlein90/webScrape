@@ -4,7 +4,6 @@ const span = document.getElementsByClassName("close")[0];
 
 function getArticles() {
     $.get("/api/saved", function (data) {
-        console.log(data)
         $("#articles").empty()
         for (var i = 0; i < data.length; i++) {
             let redditHREF;
@@ -31,7 +30,6 @@ function getArticles() {
 }
 $(document).on("click", ".delete-button", function () {
     const savedArticle = $(this).attr("data-id")
-    console.log(savedArticle)
     $.ajax({
         method: "delete",
         url: `/api/saved/${savedArticle}`

@@ -1,6 +1,5 @@
 function getArticles() {
     $.get("/api/articles", function (data) {
-        console.log(data)
         $("#articles").empty()
         for (var i = 0; i < data.length; i++) {
             let redditHREF;
@@ -38,7 +37,6 @@ $("#scrapeButton").on("click", function () {
 $(document).on("click", ".note-button", function () {
     const id = $(this).attr("data-id")
     $.get(`/api/articles/${id}`).then(function (data) {
-        console.log(data)
         $("#exampleModal").modal("show");
         $(".modal-header").html("<h4>" + data.title + "</h4>");
         $(".modal-footer").html('<button type="button" class="btn btn-primary" data-id=' + data._id + ' id="savenote">Save Note</button>');
@@ -51,7 +49,6 @@ $(document).on("click", ".note-button", function () {
 
 $(document).on("click", ".save-button", function () {
     const savedArticle = $(this).data()
-    console.log(savedArticle)
     savedArticle.saved = true;
     $.ajax({
         method: "put",
