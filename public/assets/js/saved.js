@@ -58,7 +58,7 @@ $(document).on("click", ".note-button", function () {
                 redditHREF = data.link
             }
             $(".modal-header").html("<h4>" + data.title + "</h4>");
-            $(".modal-body a").append(data.link).attr({
+            $(".modal-body a").html(data.link).attr({
                 href: redditHREF,
                 target: "_blank"
             })

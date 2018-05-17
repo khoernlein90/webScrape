@@ -23,7 +23,6 @@ router.get("/scrape", function (req, res) {
                 result.link = $(element)
                     .find("a.title")
                     .attr("href");
-                console.log(result)
                 db
                     .Article
                     .create(result)

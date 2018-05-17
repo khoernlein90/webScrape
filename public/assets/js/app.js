@@ -26,14 +26,12 @@ function getArticles() {
 }
 
 $("#scrapeButton").on("click", function () {
-    $.ajax({
-            method: "GET",
-            url: "/scrape"
-        })
-        .done(function () {
-            $("#articles").empty()
+    console.log("hi")
+    $.get("/scrape")
+        .then(function () {
+            // $("#articles").empty()
             getArticles()
-            location.reload()
+            // location.reload()
         })
 })
 

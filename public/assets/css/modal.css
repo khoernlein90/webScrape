@@ -1,6 +1,7 @@
 /* The Modal (background) */
 
 .modal {
+  word-wrap: break-word;
   display: none;
   /* Hidden by default */
   position: fixed;
